@@ -1,0 +1,19 @@
+<html doctype>
+
+	<h1>Lista</h1>
+        
+		<ul>
+			{% for art in artista %}
+            <li>{{ art }}, {{ art.nacionalidade }} </li>
+                
+                {% for alb in album %}
+                <ol>{{ alb }}</ol>
+                    
+                    {% for mus in musica %}
+                    <ol>>>>>> {{ mus }}</ol>
+
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+    	</ul>
+</html>
